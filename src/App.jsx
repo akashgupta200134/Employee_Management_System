@@ -4,7 +4,7 @@ import EmployeeDashboard from "./components/Dashboard/EmployeeDashboard";
 import { useContext } from "react";
 import { AuthContext } from "./context/AuthProvider";
 import { useEffect, useState } from "react";
-import { getLocalStorage, setLocalStorage } from "./utils/localstorage";
+import {setLocalStorage } from "./utils/localstorage";
 
 const App = () => {
   const [user, setUser] = useState(null); 
