@@ -1,4 +1,4 @@
-const TasklistNumber = () => {
+const TasklistNumber = ({data}) => {
   return (
     <div className=" flex screen justify-between gap-5 mt-10 ">
       <div className="  rounded-xl  w-[45%]  py-6 px-9 bg-red-600   ">

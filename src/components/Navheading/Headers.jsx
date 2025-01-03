@@ -1,6 +1,8 @@
 
 
-const Headers = () => {
+const Headers = ({data}) => {
+  // console.log(data);
+  
   return (
     <div className=" flex items-end justify-between ">
      
