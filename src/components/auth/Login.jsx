@@ -1,13 +1,16 @@
 import { useState } from "react";
 
-const login = () => {
+const login = ({handleLogin}) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log("email is", email);
-    console.log("password is ", password);
+    handleLogin(email, password);
+      setEmail("");
+      setPassword("");
+    // console.log("email is", email);
+    // console.log("password is ", password);
   };
 
   return (
@@ -18,8 +21,7 @@ const login = () => {
             onSubmit={(e) => {
               submitHandler(e);
 
-              setEmail("");
-              setPassword("");
+            
             }}
             className=" flex flex-col items-center justify-center gap-5 "
           >
