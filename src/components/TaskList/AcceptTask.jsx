@@ -16,10 +16,10 @@ const AcceptTask = ({ data }) => {
         <p className="text-sm mt-2">{data.taskDescription}</p>
   
         <div className="flex justify-between mt-4">
-          <button className="bg-green-600 py-1 px-2 text-sm rounded">
+          <button className="bg-green-600 py-1 px-2 text-sm rounded mt-10">
             Mark as Completed
           </button>
-          <button className="bg-red-600 py-1 px-2 text-sm rounded">Mark as Failed</button>
+          <button className="bg-red-600 py-1 px-2 text-sm rounded mt-10">Mark as Failed</button>
         </div>
       </div>
     );
